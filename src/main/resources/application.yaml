@@ -12,8 +12,8 @@ market:
 
 python:
   agent:
-    base-url: http://localhost:8000
-    timeout-ms: 2000
+    base-url: ${PYTHON_AGENT_BASE_URL:http://localhost:8000}
+
 
 trading:
   initial-balance: 10000.0
