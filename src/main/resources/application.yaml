@@ -7,7 +7,7 @@ spring:
 
 market:
   binance:
-    stream-url: ${BINANCE_STREAM_URL:wss://stream.binance.com:9443/ws/btcusdt@kline_1s}
+    stream-url: ${MARKET_BINANCE_STREAM_URL:wss://stream.binance.com:9443/ws/btcusdt@kline_1s}
     symbol: BTCUSDT
 
 python:

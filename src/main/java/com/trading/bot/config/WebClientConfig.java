@@ -23,6 +23,7 @@ public class WebClientConfig {
 
     @Bean
     public WebClient binanceWebClient() {
+        log.info("Configured Binance WebClient with base URL: {}", baseUrl);
         HttpClient httpClient = HttpClient.create()
                 .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 5000)
                 .responseTimeout(Duration.ofSeconds(10))
