@@ -12,6 +12,8 @@ FROM eclipse-temurin:21-jre-alpine AS runtime
 
 WORKDIR /app
 
+RUN apk add --no-cache libgcc libstdc++
+
 COPY --from=build /build/target/*.jar app.jar
 
 EXPOSE 8081
